@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: myfont;
+  src: url(clacon2.ttf);
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgb(129, 129, 129);
+}
+a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}
+body {
+  background-color: black;
+  height: 100vh;
+  font-family: "myfont";
+  align-items: center;
+  justify-content: center;
+  caret-color: #47d043;
+  caret-shape: block;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  overflow: auto;
+}
+p {
+  font-size: 16px;
+  color: #0fff50;
+  font-family: "myfont";
+  padding: 8px 0;
+}
+h2 {
+  text-decoration: none;
+  color: white;
+}
+p.code {
+  color: #66c2cd;
+  margin-left: 8px;
+}
+span.text {
+  margin-left: 16px;
+  color: white;
+}
+p.path {
+  color: #f2b733;
+}
+p.path span {
+  color: purple;
+}
+p.path span + span {
+  color: cyan;
+}
+
+.success {
+  color: #0fff50;
+}
+.error {
+  color: red;
+}
+p.response {
+  color: white;
+}
+
+input {
+  border: none;
+  background-color: unset;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  font-family: "myfont";
+}
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: unset;
+}
+.type {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.type2 {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.icon {
+  color: #0fff50;
+  padding-right: 8px;
+}
+
+.icon.error {
+  color: red;
+}
