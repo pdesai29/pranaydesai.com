@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* align-content: center; */
 }
 @font-face {
-  font-family: myfont;
+  font-family: myFont;
   src: url(clacon2.ttf);
 }
 ::-webkit-scrollbar-track {
@@ -31,11 +32,12 @@ a {
 body {
   background-color: black;
   height: 100vh;
-  font-family: "myfont";
+  font-family: "myFont";
   align-items: center;
   justify-content: center;
-  caret-color: #47d043;
+  caret-color: white;
   caret-shape: block;
+  align-content: center;
 }
 
 #app {
@@ -46,12 +48,17 @@ body {
   height: 100%;
   padding: 8px;
   overflow: auto;
+  border: solid #555 1px;
+  border-radius: 10px;
 }
 p {
   font-size: 16px;
   color: #0fff50;
-  font-family: "myfont";
-  padding: 8px 0;
+  font-family: "myFont";
+  padding: 8px 0px 10px 0px;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  lang: en;
 }
 h2 {
   text-decoration: none;
@@ -65,13 +72,18 @@ span.text {
   margin-left: 16px;
   color: white;
 }
-p.path {
+
+.span1 {
   color: #f2b733;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
 }
-p.path span {
+.span2 {
   color: purple;
 }
-p.path span + span {
+.span3 {
   color: cyan;
 }
 
@@ -91,7 +103,10 @@ input {
   color: white;
   width: 100%;
   font-size: 16px;
-  font-family: "myfont";
+  font-family: "myFont";
+  position: relative;
+  float: left;
+  padding: 10px;
 }
 input:focus {
   border: none;
@@ -111,9 +126,64 @@ input:focus {
 }
 .icon {
   color: #0fff50;
-  padding-right: 8px;
+  padding: 8px;
+  font-size: 13px;
 }
 
 .icon.error {
   color: red;
+}
+
+.aboutInfo {
+  color: white;
+}
+.list {
+  color: white;
+  margin-left: 35px;
+}
+.greet {
+  color: white;
+}
+.icon-text {
+  padding-left: 10px;
+  color: #0fff50;
+  padding-right: 8px;
+}
+.button {
+  background-color: #3a3a3a;
+  padding: 6px;
+  border-radius: 3px;
+}
+
+.quote {
+  color: white;
+  /* font-size: 12px; */
+}
+.quoteCopyright {
+  color: #0fff50;
+}
+.quoteList {
+  color: white;
+  margin-left: 40px;
+}
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+.label {
+  align-content: center;
 }
