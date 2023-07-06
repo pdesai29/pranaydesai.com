@@ -83,6 +83,14 @@ async function appendSocialElement(text, className) {
   } else if (className === "linkedin") {
     content.innerHTML += `<a id="e${counter}" href='https://www.linkedin.com/in/pranaydesai29/' target='_blank'><i class='fab fa-linkedin-in white '></i></a>`;
     await printText(text, `e${counter}`);
+  } else if (className === "resume") {
+    content.innerHTML += `<a id="e${counter}" href='https://drive.google.com/file/d/1RVtIgqcUCv3n--n2vApW0PThP96HHfKw/view?usp=sharing' target='_blank'><i class="fa-regular fa-file-pdf white"></i></a>`;
+    await printText(text, `e${counter}`);
+  }
+  //https://drive.google.com/file/d/1RVtIgqcUCv3n--n2vApW0PThP96HHfKw/view?usp=sharing
+  else if (className === "medium") {
+    content.innerHTML += `<a id="e${counter}" href='https://medium.com/@pranaydesai29' target='_blank'><i class="fa-solid fa-blog white"></i></a>`;
+    await printText(text, `e${counter}`);
   } else {
     content.innerHTML += `<a id="e${counter}" href='https://www.instagram.com/_____pranay______/' target='_blank'><i class='fab fa-instagram white '></i>  </a> <span>  </span>`;
     await printText(text + ` <- Not much here ;p`, `e${counter}`);

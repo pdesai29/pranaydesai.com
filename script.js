@@ -137,7 +137,7 @@ async function checkInput() {
       "aboutInfo",
       `<a class="link" href='https://www.linkedin.com/in/pranaydesai29/' target='_blank'><i class='fab fa-linkedin-in icon-text '></i><span class="button">Click</span></a>`
     );
-
+    await appendSocialElement(" < My Resume >", "resume");
     await appendElementText(
       "#################################################",
       "hashLine"
@@ -149,10 +149,12 @@ async function checkInput() {
       "newLineAboutMe"
     );
     await appendSocialElement("  < github/pranaydesai >", "github");
+
     await appendSocialElement(
       "  < linkedin.com/in/pranaydesai29 >",
       "linkedin"
     );
+    await appendSocialElement("  < medium/@pranaydesai29 >", "medium");
     await appendSocialElement("  < instagram.com/_____pranay______ >", "insta");
     await appendElementText(
       "#################################################",
